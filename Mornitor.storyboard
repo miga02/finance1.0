@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="san-JZ-Fev">
+            <objects>
+                <tableViewController id="WFM-yG-WNW" sceneMemberID="viewController">
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Yc4-LB-ldF"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="jF3-kf-hrK">
+                        <barButtonItem key="backBarButtonItem" title="back" id="QWi-pJ-Twb"/>
+                        <barButtonItem key="leftBarButtonItem" image="back" id="tUj-ps-ttl">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpC-qz-63a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3102" y="-159"/>
+        </scene>
+        <!--Warning Detail View Controller-->
+        <scene sceneID="NKU-PI-ht1">
+            <objects>
+                <navigationController id="Wwx-7r-cQQ" customClass="WarningDetailViewController" customModule="finance" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Add-w5-sog"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uk2-8p-547">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WFM-yG-WNW" kind="relationship" relationship="rootViewController" id="SOc-tZ-NNJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TR-Yl-ASO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3847" y="-153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="16" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,20 @@
+PODS:
+  - AAInfographics (2.0.4)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - AAInfographics
+  - SnapKit (~> 3.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AAInfographics
+    - SnapKit
+
+SPEC CHECKSUMS:
+  AAInfographics: 10f87e06fc007a0adbb05de020e4a2fe3119f8de
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: 1e7be419436699e68260eaf865dd1781974d20f8
+
+COCOAPODS: 1.5.3
